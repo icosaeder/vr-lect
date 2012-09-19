@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Test of WebGL, colored triangle</title>
+<meta name="comment" content="This is a test sample of WebGL, based on http://learningwebgl.com/blog/?p=134 tutorial. The original code was being modified specially for the course Virtual Reality by icosaeder, 2012">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!-- Adding matrix library to make things easier -->
+<script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+
+<!-- Vertex shader -->
+<script id="shader-vs" type="x-shader/x-vertex">
+    attribute vec3 a_position;
+    attribute vec4 a_color;
+
+    uniform mat4 u_mvp;
+    
+    varying vec4 v_color;
+
+    void main(void)
+    {
+        // Push color further to the pipeline
+        v_color = a_color;
+        // Determine position of vertex by multiplying incoming transformation matrix by incoming position
+        gl_Position = u_mvp * vec4(a_position, 1.0);
+    }
+</script>
+
+<!-- Fragment shader -->
+<script id="shader-fs" type="x-shader/x-fragment">
+    precision mediump float;
+
+    varying vec4 v_color;
+
+    void main(void)
+    {
+        // Do nothing special, just assign incoming color to fragment
+        gl_FragColor = v_color;
+    }
+</script>
+
+
+<script type="text/javascript">
+
+    // Variable that will hold WebGL context
+    var gl;
+
+    // Initiali WebGL context
+    function initGL(canvas)
+    {
+        try
+        {
+            // Create context
+            gl = canvas.getContext("experimental-webgl");
+            // Setup viewport configuration
+            gl.viewportWidth = canvas.width;
+            gl.viewportHeight = canvas.height;
+        }
+        catch (e)
+        {
+        }
+        if (!gl)
+            alert("Could not initialise WebGL, sorry :-(");
+    }
+
+    // Load shader
+    function getShader(gl, id)
+    {
+        var shaderScript = document.getElementById(id);
+        if (!shaderScript)
+            return null;
+
+        var str = "";
+        var k = shaderScript.firstChild;
+        while (k)
+        {
+            if (k.nodeType == 3)
+                str += k.textContent;
+            k = k.nextSibling;
+        }
+
+        // Create shader object
+        var shader;
+        if (shaderScript.type == "x-shader/x-fragment")
+            shader = gl.createShader(gl.FRAGMENT_SHADER);
+        else if (shaderScript.type == "x-shader/x-vertex")
+            shader = gl.createShader(gl.VERTEX_SHADER);
+        else
+            return null;
+
+        // Add source to shader
+        gl.shaderSource(shader, str);
+
+        // Compile shader
+        gl.compileShader(shader);
+
+        // Check for compilation errors
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS))
+        {
+            alert(gl.getShaderInfoLog(shader));
+            return null;
+        }
+
+        return shader;
+    }
+
+    // Variable to store shader program
+    var shaderProgram;
+
+    // Initialize shaders
+    function initShaders()
+    {
+        // Load shaders
+        var fragmentShader = getShader(gl, "shader-fs");
+        var vertexShader = getShader(gl, "shader-vs");
+
+        // Create shader program
+        shaderProgram = gl.createProgram();
+
+        // Attach shaders to the program
+        gl.attachShader(shaderProgram, vertexShader);
+        gl.attachShader(shaderProgram, fragmentShader);
+
+        // Link program (e.g. finalize shaders attaching and make program ready to run)
+        gl.linkProgram(shaderProgram);
+
+        // Check for linking errors
+        if (!gl.getProgramParameter(shaderProgram, gl.LINK_STATUS))
+            alert("Could not initialise shaders");
+
+        // Use program (e.g. attach it to pipeline)
+        gl.useProgram(shaderProgram);
+
+        // Determine location of attribute a_position and store it in shader program
+        shaderProgram.vertexPositionAttribute = gl.getAttribLocation(shaderProgram, "a_position");
+        // Enable using position attribute (it'll be obtained from vertex)
+        gl.enableVertexAttribArray(shaderProgram.vertexPositionAttribute);
+
+        // Determine location of attribute a_color and store it in shader program
+        shaderProgram.vertexColorAttribute = gl.getAttribLocation(shaderProgram, "a_color");
+        // Enable using color attribute (it'll be obtained from vertex)
+        gl.enableVertexAttribArray(shaderProgram.vertexColorAttribute);
+
+        // Determine location of uniform u_map and store it in shader program
+        shaderProgram.mvpMatrixUniform = gl.getUniformLocation(shaderProgram, "u_mvp");
+    }
+
+
+    // Create model-view and projection matrices
+    var mvMatrix = mat4.create();
+    var pMatrix = mat4.create();
+
+    // Variable to store vertex buffer
+    var vertexBuffer;
+
+    // Initialize vertex buffer
+    function initBuffers()
+    {
+        // Create vertex buffer
+        vertexBuffer = gl.createBuffer();
+
+        // Set created vertex buffer to be active
+        gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+
+        // Create array of vertices with all those attributes
+        // We could have create different arrays (and thus different buffers)
+        // for position and color, but it's more efficiaent to store everything in a single buffer
+        // So each vertex is defined as follows: x y z r g b a
+        var vertices =
+        [
+             0.0,  1.0,  0.0, 1.0, 0.0, 0.0, 1.0,
+            -1.0, -1.0,  0.0, 0.0, 1.0, 0.0, 1.0,
+             1.0, -1.0,  0.0, 0.0, 0.0, 1.0, 1.0
+        ];
+
+        // Send data to buffer (they will be stored in the graphics memory)
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
+
+        // Store size of buffer
+        vertexBuffer.itemSize = 7;
+        vertexBuffer.numItems = 3;
+    }
+
+    // Draw scene
+    function drawScene()
+    {
+        // Setup viewport
+        gl.viewport(0, 0, gl.viewportWidth, gl.viewportHeight);
+
+        // Clear color buffer by filling with clear color and depth buffer by filling with zeros
+        gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+
+        // Create projection matrix to represent perspective projection
+        // Perspective has 4 settings: fov, aspect, near and far
+        // To represent frustum, we should calculate left, right, bottom and top as follows:
+        // top = tg((fov / 2) / 180 * pi) * near
+        // bottom = -top
+        // right = top * aspect
+        // left = -right
+        mat4.perspective(45, gl.viewportWidth / gl.viewportHeight, 0.1, 100.0, pMatrix);
+
+        // Load identity to model-view matrix
+        mat4.identity(mvMatrix);
+
+        // Make some (quite random) translation to push object back and make it visible
+        // (we, e.g. "camera", are matematically always in 0,0,0)
+        mat4.translate(mvMatrix, [0.0, 0.0, -3.0]);
+
+        // Bind vertex buffer (make it active)
+        gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+
+        // Set pointer to position attribute
+        gl.vertexAttribPointer(shaderProgram.vertexPositionAttribute, 3, gl.FLOAT, false, vertexBuffer.itemSize * 4, 0);
+
+        // Set pointer to color attribute
+        gl.vertexAttribPointer(shaderProgram.vertexColorAttribute, 4, gl.FLOAT, false, vertexBuffer.itemSize * 4, 3 * 4);
+
+        // Create matrix to represent model-view-projection
+        var mvpMatrix = mat4.create();
+        // Calculate model-view-projection matrix
+        mat4.multiply(pMatrix, mvMatrix, mvpMatrix);
+        // Set uniform to the active shader program
+        gl.uniformMatrix4fv(shaderProgram.mvpMatrixUniform, false, mvpMatrix);
+
+        // Draw primitives as triangles
+        gl.drawArrays(gl.TRIANGLES, 0, vertexBuffer.numItems);
+    }
+
+    // Setup WebGL state
+    function webGLStart()
+    {
+        // Obtain canvas
+        var canvas = document.getElementById("WebGLCanvas");
+
+        // Init GL on it
+        initGL(canvas);
+
+        // Init shaders
+        initShaders()
+
+        // Init buffers
+        initBuffers();
+
+        // Set clear color (color filling color buffer before drawing) to be black
+        gl.clearColor(0.0, 0.0, 0.0, 1.0);
+
+        // Enable z-buffer
+        gl.enable(gl.DEPTH_TEST);
+
+        // Draw scene
+        drawScene();
+    }
+
+</script>
+
+</head>
+
+<body onload="webGLStart();">
+
+    <!-- Only one thig on the page: canvas where to create WebGL context and draw everything -->
+    <canvas id="WebGLCanvas" style="border: none;" width="500" height="500"></canvas>
+
+</body>
+
+</html>
