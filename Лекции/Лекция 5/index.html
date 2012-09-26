@@ -4,28 +4,36 @@
 
 <head>
 
-<title>Test of WebGL, colored triangle</title>
-<meta name="comment" content="This is a test sample of WebGL, based on http://learningwebgl.com/blog/?p=134 tutorial. The original code was being modified specially for the course Virtual Reality by icosaeder, 2012">
+<title>Lighting and animation in WebGL</title>
+<meta name="comment" content="This is a test of lighting and animation in WebGL, based on http://learningwebgl.com/blog/?p=1523, http://learningwebgl.com/blog/?p=1658 tutorials and https://www.khronos.org/registry/webgl/sdk/demos/google/shiny-teapot/index.html sample. The original code was being modified specially for the course Virtual Reality by icosaeder, 2012">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <!-- Adding matrix library to make things easier -->
 <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
 
+<!-- Adding model data of teapot, downloaded here: https://www.khronos.org/registry/webgl/sdk/demos/google/shiny-teapot/index.html -->
+<script type="text/javascript" src="teapot-streams.js"></script>
+
 <!-- Vertex shader -->
 <script id="shader-vs" type="x-shader/x-vertex">
     attribute vec3 a_position;
-    attribute vec4 a_color;
+    attribute vec3 a_normal;
 
     uniform mat4 u_mvp;
+    uniform mat4 u_mv;
+    uniform mat3 u_n;
     
-    varying vec4 v_color;
+    varying vec3 v_vertex;
+    varying vec3 v_normal;
+    varying vec3 v_light;
 
     void main(void)
     {
-        // Push color further to the pipeline
-        v_color = a_color;
-        // Determine position of vertex by multiplying incoming transformation matrix by incoming position
-        gl_Position = u_mvp * vec4(a_position, 1.0);
+        v_vertex = vec3(u_mv * vec4(a_position, 1.0));
+        v_normal = u_n * a_normal;
+        v_light = vec3(0.0, 0.0, -6.0);
+	
+	    gl_Position = u_mvp * vec4(a_position, 1.0);
     }
 </script>
 
@@ -33,12 +41,25 @@
 <script id="shader-fs" type="x-shader/x-fragment">
     precision mediump float;
 
-    varying vec4 v_color;
+    varying vec3 v_vertex;
+    varying vec3 v_normal;
+    varying vec3 v_light;
+
+    #define SHININESS 5.0
+
 
     void main(void)
     {
-        // Do nothing special, just assign incoming color to fragment
-        gl_FragColor = v_color;
+        vec3 normal = normalize(v_normal);
+	    vec3 eye = normalize(-v_vertex);
+    	vec3 ray = normalize(v_light - v_vertex);
+        vec3 reflection = reflect(-ray, normal);
+        float diffuse = max(dot(normal, ray), 0.1);
+        float specular = pow(max(dot(reflection, eye), 0.1), SHININESS);
+        
+        vec4 color = diffuse * vec4(1.0, 1.0, 0.0, 1.0) + specular * vec4(1.0, 1.0, 1.0, 1.0);
+
+    	gl_FragColor = vec4(color.rgb, 1.0);
     }
 </script>
 
@@ -47,6 +68,12 @@
 
     // Variable that will hold WebGL context
     var gl;
+    
+    // Quite a handy function
+    function degToRad(degrees)
+    {
+        return degrees * Math.PI / 180;
+    }
 
     // Initiali WebGL context
     function initGL(canvas)
@@ -139,22 +166,36 @@
         // Enable using position attribute (it'll be obtained from vertex)
         gl.enableVertexAttribArray(shaderProgram.vertexPositionAttribute);
 
-        // Determine location of attribute a_color and store it in shader program
-        shaderProgram.vertexColorAttribute = gl.getAttribLocation(shaderProgram, "a_color");
+        // Determine location of attribute a_normal and store it in shader program
+        shaderProgram.vertexNormalAttribute = gl.getAttribLocation(shaderProgram, "a_normal");
         // Enable using color attribute (it'll be obtained from vertex)
-        gl.enableVertexAttribArray(shaderProgram.vertexColorAttribute);
+        gl.enableVertexAttribArray(shaderProgram.vertexNormalAttribute);
 
         // Determine location of uniform u_mvp and store it in shader program
         shaderProgram.mvpMatrixUniform = gl.getUniformLocation(shaderProgram, "u_mvp");
+        
+        // Determine location of uniform u_mv and store it in shader program
+        shaderProgram.mvMatrixUniform = gl.getUniformLocation(shaderProgram, "u_mv");
+        
+        // Determine location of uniform u_n and store it in shader program
+        shaderProgram.nMatrixUniform = gl.getUniformLocation(shaderProgram, "u_n");
     }
 
 
     // Create model-view and projection matrices
     var mvMatrix = mat4.create();
     var pMatrix = mat4.create();
+    
+    // Angles of rotation
+    var alpha = 80.0;
+    var betta = 45.0;
 
     // Variable to store vertex buffer
     var vertexBuffer;
+    // Variable to store normals
+    var normalBuffer;
+    // Variable to store indices
+    var indexBuffer;
 
     // Initialize vertex buffer
     function initBuffers()
@@ -162,26 +203,41 @@
         // Create vertex buffer
         vertexBuffer = gl.createBuffer();
 
-        // Set created vertex buffer to be active
+        // Set created buffer to be active
         gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 
-        // Create array of vertices with all those attributes
-        // We could have create different arrays (and thus different buffers)
-        // for position and color, but it's more efficiaent to store everything in a single buffer
-        // So each vertex is defined as follows: x y z r g b a
-        var vertices =
-        [
-             0.0,  1.0,  0.0, 1.0, 0.0, 0.0, 1.0,
-            -1.0, -1.0,  0.0, 0.0, 1.0, 0.0, 1.0,
-             1.0, -1.0,  0.0, 0.0, 0.0, 1.0, 1.0
-        ];
-
         // Send data to buffer (they will be stored in the graphics memory)
-        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
+        gl.bufferData(gl.ARRAY_BUFFER, teapotPositions, gl.STATIC_DRAW);
 
         // Store size of buffer
-        vertexBuffer.itemSize = 7;
-        vertexBuffer.numItems = 3;
+        vertexBuffer.itemSize = 3;
+        vertexBuffer.numItems = teapotPositions.length / 3;
+        
+        // Create normal buffer
+        normalBuffer = gl.createBuffer();
+        
+        // Set created buffer to be active
+        gl.bindBuffer(gl.ARRAY_BUFFER, normalBuffer);
+        
+        // Send data to buffer (they will be stored in the graphics memory)
+        gl.bufferData(gl.ARRAY_BUFFER, teapotNormals, gl.STATIC_DRAW);
+        
+        // Store size of buffer
+        normalBuffer.itemSize = 3;
+        normalBuffer.numItems = teapotNormals.length / 3;
+        
+        // Create index buffer
+        indexBuffer = gl.createBuffer();
+        
+        // Set created buffer to be active (it'll be used for indexing, it has special type)
+        gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
+        
+        // Send data to buffer (they will be stored in the graphics memory)
+        gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, teapotIndices, gl.STATIC_DRAW);
+
+        // Store size of buffer
+        indexBuffer.itemSize = 1;
+        indexBuffer.numItems = teapotIndices.length;
     }
 
     // Draw scene
@@ -205,28 +261,54 @@
         // Load identity to model-view matrix
         mat4.identity(mvMatrix);
 
-        // Make some (quite random) translation to push object back and make it visible
-        // (we, e.g. "camera", are matematically always in 0,0,0)
-        mat4.translate(mvMatrix, [0.0, 0.0, -3.0]);
+        // Adjust position of the object
+        var tmpMatrix = mat4.create();
+        mat4.translate(mvMatrix, [0.0, 0.0, -10.0]);
+        mat4.scale(mvMatrix, [0.07, 0.07, 0.07]);
+        mat4.rotate(mvMatrix, degToRad(alpha), [-1, 0, -1]);
+        mat4.rotate(mvMatrix, degToRad(betta), [0, 0, 1]);
+        
+        // Make one step forward in animation
+        alpha += 0.1;
+        betta += 1.0;
 
         // Bind vertex buffer (make it active)
         gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
-
+        
         // Set pointer to position attribute
-        gl.vertexAttribPointer(shaderProgram.vertexPositionAttribute, 3, gl.FLOAT, false, vertexBuffer.itemSize * 4, 0);
+        gl.vertexAttribPointer(shaderProgram.vertexPositionAttribute, vertexBuffer.itemSize, gl.FLOAT, false, 0, 0);
+        
+        // Bind normal buffer (make it active)
+        gl.bindBuffer(gl.ARRAY_BUFFER, normalBuffer);
 
         // Set pointer to color attribute
-        gl.vertexAttribPointer(shaderProgram.vertexColorAttribute, 4, gl.FLOAT, false, vertexBuffer.itemSize * 4, 3 * 4);
+        gl.vertexAttribPointer(shaderProgram.vertexNormalAttribute, normalBuffer.itemSize, gl.FLOAT, false, 0, 0);
+        
+        // Bind index buffer (it'll be used for indexing, it has special type)
+        gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
 
         // Create matrix to represent model-view-projection
         var mvpMatrix = mat4.create();
         // Calculate model-view-projection matrix
         mat4.multiply(pMatrix, mvMatrix, mvpMatrix);
-        // Set uniform to the active shader program
+        // Create normal matrix
+        var nMatrix = mat3.create();
+        // Calculate normal matrix
+        mat4.toInverseMat3(mvMatrix, nMatrix);
+        mat3.transpose(nMatrix);
+        
+        // Set uniform mvp to the active shader program
         gl.uniformMatrix4fv(shaderProgram.mvpMatrixUniform, false, mvpMatrix);
+        // Set uniform mv to the active shader program
+        gl.uniformMatrix4fv(shaderProgram.mvMatrixUniform, false, mvMatrix);
+        // Set uniform n to the active shader program
+        gl.uniformMatrix3fv(shaderProgram.nMatrixUniform, false, nMatrix);
 
         // Draw primitives as triangles
-        gl.drawArrays(gl.TRIANGLES, 0, vertexBuffer.numItems);
+        gl.drawElements(gl.TRIANGLES, indexBuffer.numItems, gl.UNSIGNED_SHORT, 0);
+        
+        // Set timeout to call this fuction again in 1/60 sec -- it's not the best approach to achive animation, indeed =\
+        setTimeout(function() { drawScene() }, 1000.0/60.0);
     }
 
     // Setup WebGL state
