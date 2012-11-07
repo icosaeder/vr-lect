@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="cameras.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path3816"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path3813"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3813-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3816-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3813-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3816-57"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4563"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4565"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4567"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4569"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.51269531"
+     inkscape:cx="1026.5965"
+     inkscape:cy="628.5233"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="946"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="color:#000000;fill:none;stroke:#0000ff;stroke-width:3;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 160.91429,318.98312 237.9581,0 -75,254.53714 -87.9581,0 z"
+       id="rect2985"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 280.41561,285.82504 0,324.75429"
+       id="path3758"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="color:#000000;fill:none;stroke:#ff0000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 290.91429,318.98312 237.9581,0 -75,254.53714 -87.9581,0 z"
+       id="rect2985-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 410.41561,285.82504 0,324.75429"
+       id="path3758-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:8, 16;stroke-dashoffset:0"
+       d="m 344.79874,609.98622 0,-328.59401"
+       id="path3799"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 285.16614,593.43507 55.02226,0"
+       id="path3801"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 349.85898,593.43507 56.9439,0"
+       id="path3801-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4481"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="translate(-2.0687924,-6.2063772)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><flowRegion
+         id="flowRegion4483"><rect
+           id="rect4485"
+           width="22.756716"
+           height="28.273497"
+           x="308.25006"
+           y="613.08862" /></flowRegion><flowPara
+         id="flowPara4487"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Italic">d</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4481-6"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="translate(61.03523,-6.2063743)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><flowRegion
+         id="flowRegion4483-2"><rect
+           id="rect4485-7"
+           width="22.756716"
+           height="28.273497"
+           x="308.25006"
+           y="613.08862" /></flowRegion><flowPara
+         id="flowPara4487-1"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Italic">d</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="-517.3717"
+       y="268.76205"
+       id="text4516"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><tspan
+         sodipodi:role="line"
+         id="tspan4518"
+         x="-517.3717"
+         y="268.76205"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#0000ff">левая камера</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="-517.3717"
+       y="428.76205"
+       id="text4516-5"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><tspan
+         sodipodi:role="line"
+         id="tspan4518-7"
+         x="-517.3717"
+         y="428.76205"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#ff0000">правая камера</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4541"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="matrix(0,-0.70301402,0.70301402,0,-101.38824,500.17303)"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><flowRegion
+         id="flowRegion4543"><rect
+           id="rect4545"
+           width="193.77689"
+           height="37.92786"
+           x="118.61076"
+           y="632.39734" /></flowRegion><flowPara
+         id="flowPara4547"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">ось взгляда</flowPara></flowRoot>    <path
+       style="color:#000000;fill:none;stroke:#0000ff;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 902.43619,283.80168 367.66481,0 -204.7067,254.53714 -87.95811,0 z"
+       id="rect2985-16"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1021.9375,250.6436 0,324.75429"
+       id="path3758-34"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="color:#000000;fill:none;stroke:#ff0000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 902.72953,283.80168 367.66477,0 -75,254.53714 -87.9581,0 z"
+       id="rect2985-1-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1151.9375,250.6436 0,324.75429"
+       id="path3758-3-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:8, 16;stroke-dashoffset:0"
+       d="m 1086.3206,574.80478 0,-328.59401"
+       id="path3799-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 1026.688,558.25363 55.0223,0"
+       id="path3801-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 1091.3809,558.25363 56.9439,0"
+       id="path3801-1-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4481-63"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="translate(739.45311,-41.38782)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><flowRegion
+         id="flowRegion4483-9"><rect
+           id="rect4485-8"
+           width="22.756716"
+           height="28.273497"
+           x="308.25006"
+           y="613.08862" /></flowRegion><flowPara
+         id="flowPara4487-0"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Italic">d</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4481-6-1"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="translate(802.55713,-41.38781)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><flowRegion
+         id="flowRegion4483-2-3"><rect
+           id="rect4485-7-6"
+           width="22.756716"
+           height="28.273497"
+           x="308.25006"
+           y="613.08862" /></flowRegion><flowPara
+         id="flowPara4487-1-9"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Italic">d</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="-482.19028"
+       y="1010.2839"
+       id="text4516-9"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><tspan
+         sodipodi:role="line"
+         id="tspan4518-2"
+         x="-482.19028"
+         y="1010.2839"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#0000ff;font-family:Arial;-inkscape-font-specification:Arial">левая камера</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="-482.19028"
+       y="1170.2839"
+       id="text4516-5-0"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/flowRoot4541-8.png"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><tspan
+         sodipodi:role="line"
+         id="tspan4518-7-6"
+         x="-482.19028"
+         y="1170.2839"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;font-family:Arial;-inkscape-font-specification:Arial">правая камера</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4541-8"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="matrix(0,-0.70301402,0.70301402,0,640.13366,464.99159)"
+       inkscape:export-xdpi="149"
+       inkscape:export-ydpi="149"><flowRegion
+         id="flowRegion4543-1"><rect
+           id="rect4545-8"
+           width="193.77689"
+           height="37.92786"
+           x="118.61076"
+           y="632.39734" /></flowRegion><flowPara
+         id="flowPara4547-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">ось взгляда</flowPara></flowRoot>  </g>
+</svg>

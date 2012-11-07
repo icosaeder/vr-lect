@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="parallax.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="EmptyTriangleInL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleInL"
+       style="overflow:visible">
+      <path
+         id="path4277"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(-0.8) translate(-6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="DotL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="DotL"
+       style="overflow:visible">
+      <path
+         id="path4187"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;marker-end:none"
+         transform="scale(0.8) translate(7.4, 1)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mstart"
+       style="overflow:visible">
+      <path
+         id="path4149"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path4152"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path4131"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path4125"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2884"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2969"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3860"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3909"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3931"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3953"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3975"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3997"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4019"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4050"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4078"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4100"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6692"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6721"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6721-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6721-5"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0621006"
+     inkscape:cx="490.35511"
+     inkscape:cy="600.50769"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="946"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="1,0"
+       position="623.39611,830.27535"
+       id="guide4029" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Слой"
+     style="opacity:1">
+    <g
+       id="g3030"
+       transform="matrix(0.6609279,1.7745429,-1.7745429,0.6609279,445.02843,-740.23008)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="cscc"
+         id="path4040"
+         d="m 425.77931,365.83726 c 0,0 -9.60035,6.56477 -8.58631,10.6066 0.47293,1.88501 4.29315,0 4.29315,0 l 4.29316,-10.6066 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="cscc"
+         id="path4040-9"
+         d="m 466.51117,377.06513 c 0,0 3.98478,10.92632 0.80748,13.62251 -1.48182,1.25743 -3.49081,-2.49907 -3.49081,-2.49907 l 2.68333,-11.12344 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="ccccc"
+         id="path4068-1"
+         d="m 466.08499,364.94385 -8.61387,-11.54344 1.13695,-8.00446 4.16265,6.76682 3.31427,12.78108 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="ccccc"
+         id="path4068"
+         d="m 434.11306,354.72558 16.36007,-3.91023 0.68626,-6.94891 -6.52447,2.74081 -10.52186,8.11833 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="cscsc"
+         id="path4066"
+         d="m 458.48299,350.5587 c 0,0 -3.38577,1.15705 -5.63346,0.55957 -2.69851,-0.71733 -4.3418,-3.21122 -4.3418,-3.21122 0,0 4.76835,-7.62194 7.57614,-6.9448 3.04135,0.73347 2.39912,9.59645 2.39912,9.59645 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="csssccssscc"
+         id="path4038"
+         d="m 450.21875,348 c -4.41867,0.12984 -9.16188,2.07902 -12.71875,4.375 -5.80308,3.74591 -10.09752,9.91234 -12.84375,16.25 -2.56046,5.90896 -4.9112,12.98428 -2.875,19.09375 2.06283,6.18933 7.86351,11.36889 13.9375,13.75 l 0.0312,-0.0312 c 6.22132,1.96424 13.97496,1.58121 19.46875,-1.9375 5.4229,-3.47332 8.06024,-10.48187 9.78125,-16.6875 1.84586,-6.65586 2.37943,-14.15833 0.21875,-20.71875 -1.76578,-5.36143 -5.5751,-11.51965 -10.8125,-13.625 -1.29511,-0.39067 -2.78778,-0.43386 -4.1875,-0.46875 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       style="color:#000000;fill:#999999;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3038"
+       width="7.5855722"
+       height="210.32722"
+       x="336.52356"
+       y="189.67575"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.10762691;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3844"
+       sodipodi:sides="5"
+       sodipodi:cx="441.34238"
+       sodipodi:cy="281.39221"
+       sodipodi:r1="44.956257"
+       sodipodi:r2="24.160791"
+       sodipodi:arg1="0.85052333"
+       sodipodi:arg2="1.0733587"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 470.99507,315.18249 -18.12376,-12.55758 -34.50221,17.41046 6.34241,-21.11723 -27.22009,-27.43342 22.04359,-0.49359 17.67926,-34.36524 7.28127,20.81217 38.14649,6.19454 -17.54352,13.35621 z"
+       transform="matrix(0.64366328,0,0,0.64349258,202.22561,116.48432)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 120.42096,279.75442 503.66475,26.4633"
+       id="path3846"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 123.26555,310.3553 624.48966,294.54358"
+       id="path3848"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3850"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="translate(-5.8514285,-13.653333)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><flowRegion
+         id="flowRegion3852"><rect
+           id="rect3854"
+           width="71.192375"
+           height="72.167618"
+           x="254.53714"
+           y="231.2117"
+           style="text-align:center;text-anchor:middle;fill:#0000ff" /></flowRegion><flowPara
+         id="flowPara3856"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#0000ff">левый кадр</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3850-2"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="translate(-15.248482,88.498006)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><flowRegion
+         id="flowRegion3852-9"><rect
+           id="rect3854-8"
+           width="92.159996"
+           height="65.34095"
+           x="254.53714"
+           y="231.2117"
+           style="text-align:center;text-anchor:middle;fill:#ff0000" /></flowRegion><flowPara
+         id="flowPara3856-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#ff0000">правый кадр</flowPara></flowRoot>    <g
+       id="g3030-2"
+       transform="matrix(0.6609279,1.7745429,-1.7745429,0.6609279,445.02843,-475.23008)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3-2.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="cscc"
+         id="path4040-8"
+         d="m 425.77931,365.83726 c 0,0 -9.60035,6.56477 -8.58631,10.6066 0.47293,1.88501 4.29315,0 4.29315,0 l 4.29316,-10.6066 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="cscc"
+         id="path4040-9-0"
+         d="m 466.51117,377.06513 c 0,0 3.98478,10.92632 0.80748,13.62251 -1.48182,1.25743 -3.49081,-2.49907 -3.49081,-2.49907 l 2.68333,-11.12344 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="ccccc"
+         id="path4068-1-6"
+         d="m 466.08499,364.94385 -8.61387,-11.54344 1.13695,-8.00446 4.16265,6.76682 3.31427,12.78108 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="ccccc"
+         id="path4068-6"
+         d="m 434.11306,354.72558 16.36007,-3.91023 0.68626,-6.94891 -6.52447,2.74081 -10.52186,8.11833 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="cscsc"
+         id="path4066-7"
+         d="m 458.48299,350.5587 c 0,0 -3.38577,1.15705 -5.63346,0.55957 -2.69851,-0.71733 -4.3418,-3.21122 -4.3418,-3.21122 0,0 4.76835,-7.62194 7.57614,-6.9448 3.04135,0.73347 2.39912,9.59645 2.39912,9.59645 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/icosaeder/SEPresentation_2/rect6710.png"
+         sodipodi:nodetypes="csssccssscc"
+         id="path4038-8"
+         d="m 450.21875,348 c -4.41867,0.12984 -9.16188,2.07902 -12.71875,4.375 -5.80308,3.74591 -10.09752,9.91234 -12.84375,16.25 -2.56046,5.90896 -4.9112,12.98428 -2.875,19.09375 2.06283,6.18933 7.86351,11.36889 13.9375,13.75 l 0.0312,-0.0312 c 6.22132,1.96424 13.97496,1.58121 19.46875,-1.9375 5.4229,-3.47332 8.06024,-10.48187 9.78125,-16.6875 1.84586,-6.65586 2.37943,-14.15833 0.21875,-20.71875 -1.76578,-5.36143 -5.5751,-11.51965 -10.8125,-13.625 -1.29511,-0.39067 -2.78778,-0.43386 -4.1875,-0.46875 z"
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.52808672px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       style="color:#000000;fill:#999999;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3038-5"
+       width="7.5855722"
+       height="210.32722"
+       x="336.52356"
+       y="454.67575"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3-2.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.10762691;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3844-4"
+       sodipodi:sides="5"
+       sodipodi:cx="441.34238"
+       sodipodi:cy="281.39221"
+       sodipodi:r1="44.956257"
+       sodipodi:r2="24.160791"
+       sodipodi:arg1="0.85052333"
+       sodipodi:arg2="1.0733587"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 470.99507,315.18249 -18.12376,-12.55758 -34.50221,17.41046 6.34241,-21.11723 -27.22009,-27.43342 22.04359,-0.49359 17.67926,-34.36524 7.28127,20.81217 38.14649,6.19454 -17.54352,13.35621 z"
+       transform="matrix(0.64366328,0,0,0.64349258,-57.77439,381.48432)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3-2.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 120.42096,544.75442 502.97515,83.01029"
+       id="path3846-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3-2.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 123.26555,575.3553 623.39611,507.13417"
+       id="path3848-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3-2.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3850-9"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="translate(-5.8514266,353.50272)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3-2.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><flowRegion
+         id="flowRegion3852-7"><rect
+           id="rect3854-1"
+           width="71.192375"
+           height="72.167618"
+           x="254.53714"
+           y="231.2117"
+           style="text-align:center;text-anchor:middle;fill:#0000ff" /></flowRegion><flowPara
+         id="flowPara3856-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#0000ff;font-family:Arial;-inkscape-font-specification:Arial">левый кадр</flowPara></flowRoot>    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4031"
+       sodipodi:cx="365.65906"
+       sodipodi:cy="257.08389"
+       sodipodi:rx="6.033978"
+       sodipodi:ry="6.033978"
+       d="m 371.69304,257.08389 a 6.033978,6.033978 0 1 1 -12.06796,0 6.033978,6.033978 0 1 1 12.06796,0 z"
+       transform="translate(-25.182252,47.826035)"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4031-3"
+       sodipodi:cx="365.65906"
+       sodipodi:cy="257.08389"
+       sodipodi:rx="6.033978"
+       sodipodi:ry="6.033978"
+       d="m 371.69304,257.08389 a 6.033978,6.033978 0 1 1 -12.06796,0 6.033978,6.033978 0 1 1 12.06796,0 z"
+       transform="translate(-25.1213,34.288895)"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4031-2"
+       sodipodi:cx="365.65906"
+       sodipodi:cy="257.08389"
+       sodipodi:rx="6.033978"
+       sodipodi:ry="6.033978"
+       d="m 371.69304,257.08389 a 6.033978,6.033978 0 1 1 -12.06796,0 6.033978,6.033978 0 1 1 12.06796,0 z"
+       transform="translate(-25.18225,288.51564)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3-2.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4031-3-2"
+       sodipodi:cx="365.65906"
+       sodipodi:cy="257.08389"
+       sodipodi:rx="6.033978"
+       sodipodi:ry="6.033978"
+       d="m 371.69304,257.08389 a 6.033978,6.033978 0 1 1 -12.06796,0 6.033978,6.033978 0 1 1 12.06796,0 z"
+       transform="translate(-25.1213,323.59512)"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3850-2-6-7"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       transform="translate(-15.248478,241.14418)"
+       inkscape:export-filename="/home/icosaeder/Лекция 9/path4031-3-2.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><flowRegion
+         id="flowRegion3852-9-3-2"><rect
+           id="rect3854-8-7-8"
+           width="92.159996"
+           height="65.34095"
+           x="254.53714"
+           y="231.2117"
+           style="text-align:center;text-anchor:middle;fill:#ff0000" /></flowRegion><flowPara
+         id="flowPara3856-5-3-1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;font-family:Arial;-inkscape-font-specification:Arial">правый кадр</flowPara></flowRoot>  </g>
+</svg>
