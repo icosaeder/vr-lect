@@ -48,7 +48,7 @@
     // Variable that will hold WebGL context
     var gl;
 
-    // Initiali WebGL context
+    // Initialize WebGL context
     function initGL(canvas)
     {
         try
@@ -63,7 +63,7 @@
         {
         }
         if (!gl)
-            alert("Could not initialise WebGL, sorry :-(");
+            alert("Could not initialize WebGL, sorry :-(");
     }
 
     // Load shader
@@ -129,7 +129,7 @@
 
         // Check for linking errors
         if (!gl.getProgramParameter(shaderProgram, gl.LINK_STATUS))
-            alert("Could not initialise shaders");
+            alert("Could not initialize shaders");
 
         // Use program (e.g. attach it to pipeline)
         gl.useProgram(shaderProgram);
@@ -239,7 +239,7 @@
         initGL(canvas);
 
         // Init shaders
-        initShaders()
+        initShaders();
 
         // Init buffers
         initBuffers();
